@@ -1,6 +1,6 @@
-# LIBFT_IO_TESTER
+# LIBFT_STRING_TESTER
 
-This tester will test each fonction from libft_io
+This tester will test each fonction from libft_string
 
 ## How to run 
 
