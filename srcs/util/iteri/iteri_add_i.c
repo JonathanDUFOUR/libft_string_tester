@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   e_ret.h                                            :+:      :+:    :+:   */
+/*   iteri_add_i.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/16 00:27:16 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 18:36:31 by jodufour         ###   ########.fr       */
+/*   Created: 2021/12/27 14:46:50 by jodufour          #+#    #+#             */
+/*   Updated: 2021/12/27 18:14:34 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef E_RET_H
-# define E_RET_H
+#include "type/t_int.h"
 
-enum	e_ret
+void	iteri_add_i(t_uint const i, char *const c)
 {
-	SUCCESS,
-	STRDUP_ERR,
-	FT_SPLIT_ERR,
-	FT_STRDUP_ERR,
-	FT_STRCDUP_ERR,
-	FT_STRJOIN_ERR,
-	FT_STRCJOIN_ERR
-};
-
-#endif
+	*(t_hhuint *)c += i;
+}

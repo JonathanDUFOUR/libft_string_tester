@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 09:27:29 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 04:46:00 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/12/27 18:36:51 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,12 @@ struct s_err_msg
 };
 
 static t_err_msg const		g_err_msg[] = {
+{STRDUP_ERR, "strdup() failed"},
 {FT_SPLIT_ERR, "ft_split() failed"},
+{FT_STRDUP_ERR, "ft_strdup() failed"},
+{FT_STRCDUP_ERR, "ft_strcdup() failed"},
+{FT_STRJOIN_ERR, "ft_strjoin() failed"},
+{FT_STRCJOIN_ERR, "ft_strcjoin() failed"},
 {0}
 };
 
