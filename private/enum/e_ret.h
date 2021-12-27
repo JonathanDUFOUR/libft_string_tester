@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 00:27:16 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/26 00:47:11 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/12/27 04:45:42 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 
 enum	e_ret
 {
-	SUCCESS
+	SUCCESS,
+	FT_SPLIT_ERR
 };
 
 #endif

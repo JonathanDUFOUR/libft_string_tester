@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 09:27:29 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/26 00:46:53 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/12/27 04:46:00 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ struct s_err_msg
 };
 
 static t_err_msg const		g_err_msg[] = {
+{FT_SPLIT_ERR, "ft_split() failed"},
 {0}
 };
 

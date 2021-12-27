@@ -6,7 +6,7 @@
 #    By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/16 00:16:26 by jodufour          #+#    #+#              #
-#    Updated: 2021/12/26 00:03:00 by jodufour         ###   ########.fr        #
+#    Updated: 2021/12/27 05:43:33 by jodufour         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -132,7 +132,7 @@ ${FT_STRING_A}:
 	${MAKE} ${@F} -C ${@D}
 
 clean:
-	${RM} ${OBJ_DIR} ${NAME}
+	${RM} ${OBJ_DIR} ${NAME} vgcore*
 
 fclean:
 	${RM} ${OBJ_DIR} ${NAME}
