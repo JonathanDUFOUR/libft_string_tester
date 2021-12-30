@@ -6,7 +6,7 @@
 #    By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/16 00:16:26 by jodufour          #+#    #+#              #
-#    Updated: 2021/12/27 14:55:33 by jodufour         ###   ########.fr        #
+#    Updated: 2021/12/30 08:34:39 by jodufour         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -107,6 +107,24 @@ SRC					=	\
 								iteri_mult_i.c			\
 								iteri_sub_i.c			\
 							}							\
+							${addprefix map/,			\
+								map_decrement.c			\
+								map_increment.c			\
+								map_mult_two.c			\
+								map_square.c			\
+								map_todigit.c			\
+								map_tolower.c			\
+								map_toupper.c			\
+							}							\
+							${addprefix mapi/,			\
+								mapi_add_i.c			\
+								mapi_decrement_odd.c	\
+								mapi_div_i.c			\
+								mapi_increment_even.c	\
+								mapi_mod_i.c			\
+								mapi_mult_i.c			\
+								mapi_sub_i.c			\
+							}							\
 						}								\
 						err_msg.c						\
 						main.c							\
@@ -129,6 +147,7 @@ CFLAGS			+=	-I${PRV_DIR}
 CFLAGS			+=	-I${FT_STRING_INC_DIR}
 
 LDFLAGS			=	-L${FT_STRING_DIR} -lft_string
+LDFLAGS			+=	-lbsd
 
 ifeq (${DEBUG}, 1)
 	CFLAGS		+=	-g

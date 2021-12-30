@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/25 23:13:03 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 11:16:11 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/12/30 13:27:47 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <string.h>
 #include "ft_string.h"
 #include "tester.h"
+#include "lorem_ipsum.h"
 #include "enum/e_ret.h"
 
 typedef struct s_test	t_test;
@@ -31,73 +32,37 @@ static t_test const		g_test[] = {
 {2,
 	"A"},
 {3,
-	"42"},
+	"bb"},
 {4,
-	"Hello World !"},
+	"CCC"},
 {5,
-	"]-[alpha BRAVO charlie DELTA[+]"},
+	LOREM_128},
 {6,
-	"Sakura_Minato_Kushina_Naruto_Sasuke_Lee_Gai_Tenten_Gaara_Kakashi_Itachi"},
+	LOREM_256},
 {7,
-	"\
-I wanna be the very best, like no one ever was.\n\
-To catch them is my real test, to train them is my cause !\n\
-I will travel across the lands, searching far and wide.\n\
-Each Pokemon to understand. The power that's inside !\n\
-\n\
-Pokemon ! Gotta catch 'em !\n\
-It's you and me !\n\
-I know it's my destiny !\n\
-Pokemon ! Gotta catch 'em !\n\
-Oh, you're my best friend !\n\
-In the world we must defend !\n\
-Pokemon ! Gotta catch 'em !\n\
-A heart so true !\n\
-Our courage will pull us through !\n\
-You teach me and I teach you !\n\
-Poookeeemooon !\n\
-Gotta catch 'em all ! Gotta catch 'em all ! Pokemon !\n\
-\n\
-Every challenge along the way, with courage I will face.\n\
-I will battle everyday to claim my rightfull place !\n\
-Come with me, the time is right, there's no better team.\n\
-Arm in arm, we'll win the fight, it's always been our dream !\n\
-\n\
-Pokemon ! Gotta catch 'em !\n\
-It's you and me !\n\
-I know it's my destiny !\n\
-Pokemon ! Gotta catch 'em !\n\
-Oh, you're my best friend !\n\
-In the world we must defend !\n\
-Pokemon ! Gotta catch 'em !\n\
-A heart so true !\n\
-Our courage will pull us through !\n\
-You teach me and I teach you !\n\
-Poookeeemooon !\n\
-Gotta catch 'em all ! Gotta catch 'em all ! Pokemon !\n\
-\n\
-(instrumental)\n\
-\n\
-Pokemon ! Gotta catch 'em !\n\
-It's you and me !\n\
-I know it's my destiny !\n\
-Pokemon ! Gotta catch 'em !\n\
-Oh, you're my best friend !\n\
-In the world we must defend !\n\
-Pokemon ! Gotta catch 'em !\n\
-A heart so true !\n\
-Our courage will pull us through !\n\
-You teach me and I teach you !\n\
-Poookeeemooon !\n\
-Gotta catch 'em all ! Gotta catch 'em all ! Pokemon !"},
+	LOREM_512},
+{8,
+	LOREM_1024},
+{9,
+	LOREM_2048},
+{10,
+	LOREM_4096},
+{11,
+	LOREM_8192},
+{12,
+	LOREM_16384},
+{13,
+	LOREM_32768},
+{14,
+	LOREM_65536},
 {0}
 };
 
 int	test_ft_strdup(int *const ret)
 {
-	char	*str0;
-	char	*str1;
-	int		i;
+	char const	*str0;
+	char const	*str1;
+	int			i;
 
 	printf("%20s:", __func__ + 5);
 	i = 0;
@@ -109,13 +74,13 @@ int	test_ft_strdup(int *const ret)
 		str1 = ft_strdup(g_test[i].str);
 		if (!str1)
 		{
-			free(str0);
+			free((void *)str0);
 			return (*ret = FT_STRDUP_ERR);
 		}
 		result(g_test[i].num,
 			!strcmp(str0, str1));
-		free(str0);
-		free(str1);
+		free((void *)str0);
+		free((void *)str1);
 		++i;
 	}
 	printf("\n");

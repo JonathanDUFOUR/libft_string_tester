@@ -6,11 +6,10 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/25 23:14:04 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 18:29:14 by jodufour         ###   ########.fr       */
+/*   Updated: 2021/12/30 08:11:12 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 #include "ft_colors.h"
