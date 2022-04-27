@@ -6,14 +6,14 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 01:48:23 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/30 08:19:12 by jodufour         ###   ########.fr       */
+/*   Updated: 2022/04/27 09:46:19 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef TESTER_H
 # define TESTER_H
 
-# include "type/t_int.h"
+# include "t_int.h"
 
 int		err_msg(int const err);
 

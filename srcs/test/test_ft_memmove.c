@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/25 23:08:09 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 04:08:17 by jodufour         ###   ########.fr       */
+/*   Updated: 2022/04/27 09:43:37 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "ft_string.h"
 #include "tester.h"
-#include "enum/e_ret.h"
+#include "e_ret.h"
 
 typedef struct s_basic_test		t_basic_test;
 typedef struct s_overlap_test	t_overlap_test;

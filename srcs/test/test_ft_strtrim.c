@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/25 23:21:04 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/30 16:11:04 by jodufour         ###   ########.fr       */
+/*   Updated: 2022/04/27 09:45:20 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <string.h>
 #include "ft_string.h"
 #include "tester.h"
-#include "enum/e_ret.h"
+#include "e_ret.h"
 
 typedef struct s_test	t_test;
 

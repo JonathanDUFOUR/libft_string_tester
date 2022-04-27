@@ -6,11 +6,11 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/27 14:46:50 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 18:14:34 by jodufour         ###   ########.fr       */
+/*   Updated: 2022/04/27 09:46:43 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "type/t_int.h"
+#include "t_int.h"
 
 void	iteri_add_i(t_uint const i, char *const c)
 {

@@ -6,11 +6,11 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/27 14:46:50 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/30 08:38:02 by jodufour         ###   ########.fr       */
+/*   Updated: 2022/04/27 09:47:15 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "type/t_int.h"
+#include "t_int.h"
 
 char	mapi_add_i(t_uint const i, char const c)
 {

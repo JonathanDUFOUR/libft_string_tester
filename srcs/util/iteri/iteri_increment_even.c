@@ -6,11 +6,11 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/27 14:59:03 by jodufour          #+#    #+#             */
-/*   Updated: 2021/12/27 18:15:15 by jodufour         ###   ########.fr       */
+/*   Updated: 2022/04/27 09:46:54 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "type/t_int.h"
+#include "t_int.h"
 
 void	iteri_increment_even(t_uint const i, char *const c)
 {
