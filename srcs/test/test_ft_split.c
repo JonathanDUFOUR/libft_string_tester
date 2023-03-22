@@ -6,7 +6,7 @@
 /*   By: jodufour <jodufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/25 23:09:09 by jodufour          #+#    #+#             */
-/*   Updated: 2022/04/27 09:43:47 by jodufour         ###   ########.fr       */
+/*   Updated: 2023/03/22 18:17:04 by jodufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,27 +23,27 @@ struct s_test
 {
 	int const	num;
 	char const	*str;
-	char const	c;
+	char const	*set;
 	char const	**expect;
 };
 
 static t_test const		g_test[] = {
 {1,
 	"",
-	'Z',
+	"Z",
 	(char const *[]){
 	NULL}},
 {2,
 	"Hello World !",
-	' ',
+	" ",
 	(char const *[]){
 	"Hello",
 	"World",
 	"!",
 	NULL}},
 {3,
-	"  Lerooooyyy       Jennnnkiiiiins    !!!      ",
-	' ',
+	"  Lerooooyyy\t  \t   Jennnnkiiiiins\t\t!!!      ",
+	"\t ",
 	(char const *[]){
 	"Lerooooyyy",
 	"Jennnnkiiiiins",
@@ -51,18 +51,18 @@ static t_test const		g_test[] = {
 	NULL}},
 {4,
 	"aaaaaaaaa",
-	'a',
+	"a",
 	(char const *[]){
 	NULL}},
 {5,
 	">>_koala_forever_<<",
-	'X',
+	"XMEN",
 	(char const *[]){
 	">>_koala_forever_<<",
 	NULL}},
 {6,
 	" f-o-r-t-y t-w-o ",
-	'-',
+	"-_-",
 	(char const *[]){
 	" f",
 	"o",
@@ -74,7 +74,7 @@ static t_test const		g_test[] = {
 	NULL}},
 {7,
 	"_GlOrY_ _tO_ _tHe_ _HoRdE_ _!_",
-	'_',
+	"_(^-^)/",
 	(char const *[]){
 	"GlOrY",
 	" ",
@@ -100,7 +100,7 @@ int	test_ft_split(int *const ret)
 	i = 0;
 	while (g_test[i].num)
 	{
-		tab = ft_split(g_test[i].str, g_test[i].c);
+		tab = ft_split(g_test[i].str, g_test[i].set);
 		if (!tab)
 			return (*ret = FT_SPLIT_ERR);
 		expect = g_test[i].expect;
